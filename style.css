@@ -111,6 +111,10 @@ button:not(:last-child) {
   display: none;
 }
 
+.buttons__delete.show {
+  display: inline;
+}
+
 @media(max-width: 770px) {
   .circle {
     max-width: 300px;

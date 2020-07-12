@@ -25,18 +25,19 @@ function start() {
     ball.classList.add('shadow');
     startBtn.firstElementChild.src = './img/pause.svg';
     startBtn.dataset.click = 'stopTime';
+    deleteBtn.classList.remove('show');
 };
 
 function stopTime() {
     clearInterval(interval);
     ball.classList.remove('shadow');
     startBtn.firstElementChild.src = './img/play.svg';
-    deleteBtn.style.display = 'inline';
+    deleteBtn.classList.add('show');
     startBtn.dataset.click = 'start';
 }
 
 function deleteTime() {
-    deleteBtn.style.display = 'none';
+    deleteBtn.classList.remove('show');
     currentSeconds = 0;
     currentHours = 0;
     currentMinutes = 0;
