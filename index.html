@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+    <title>stopwatch.</title>
+</head>
+<body>
+    <header>
+        <h1>stopwatch</h1>
+    </header>
+
+    <div class="container">
+        <div class="circle">
+            <div class="circle__inner">
+                <div class="ball"></div>
+            </div>
+            <div class="time__field">
+                <div class="hours">00</div>
+                <div class="colon">:</div>
+                <div class="minutes">00</div>
+                <div class="colon">:</div>
+                <div class="seconds">00</div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="buttons__delete" data-click="deleteTime">
+                <img class="btns__icon" src="./img/delete.svg" alt="">
+            </button>
+            <button class="buttons__start" data-click="start">
+                <img class="btns__icon" src="./img/play.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
